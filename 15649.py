@@ -16,3 +16,14 @@ def dfs():
         lis.pop()
 
 dfs()
+
+# from itertools import permutations 를 활용한 풀이
+
+from itertools import permutations
+
+n,m=map(int,input().split())
+lis=[i for i in range(1,n+1)]
+all = permutations(lis,m)
+
+for i in list(all):
+    print(*i)
