@@ -8,7 +8,7 @@ s += d
 m += s//60
 h += m//60
 
-print(h, m, s)
+print(h%24,m%60,s%60)
 
 # 일일이 계산해준 버전
 h, m, s = map(int, input().split())
