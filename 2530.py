@@ -1,4 +1,16 @@
 # 2530 인공지능 시계
+
+
+h, m, s = map(int, input().split())
+d = int(input())
+
+s += d
+m += s//60
+h += m//60
+
+print(h, m, s)
+
+# 일일이 계산해준 버전
 h, m, s = map(int, input().split())
 d = int(input())
 
@@ -19,3 +31,4 @@ if h >= 24:
     h -= 24
 
 print(h, m, s)
+
