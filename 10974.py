@@ -1,9 +1,18 @@
 # 10974 모든 순열
-from itertools import permutations
 n = int(input())
-lis = list(i for i in range(1, n+1))
 
-per = permutations(lis, n)
+temp = []
 
-for i in per:
-    print(*i)
+
+def dfs():
+    if len(temp) == n:
+        print(*temp)
+        return
+    for i in range(1, n+1):
+        if i not in temp:
+            temp.append(i)
+            dfs()
+            temp.pop()
+
+
+dfs()
