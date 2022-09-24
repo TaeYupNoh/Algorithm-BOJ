@@ -3,7 +3,7 @@
 word = ['a','e','i','o','u']
 while True:
     cnt = 0
-    words = input()
+    words = input().lower()
     if words == '#':
         break
     for temp in words:
