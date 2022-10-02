@@ -37,5 +37,6 @@ for _ in range(t):
         for j in range(m):
             if graph[i][j] == 1:
                 cnt += bfs(i, j)
+                
 
     print(cnt)
