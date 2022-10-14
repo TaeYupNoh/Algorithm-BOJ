@@ -27,4 +27,5 @@ for i in range(3, n+1):
     dp_cnt += 1
     d[i] = d[i-1] + d[i-2]
 
+    
 print(re_cnt, dp_cnt)
