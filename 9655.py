@@ -1,6 +1,6 @@
 # 9655 돌 게임
 n = int(input())
-dp = [[0] for _ in range(n+1)]
+dp = [0] * 1001
 dp[1] = 1
 dp[2] = 0
 dp[3] = 1
